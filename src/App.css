@@ -1,0 +1,24 @@
+[data-theme="light"] {
+  --bg-color: #fff;
+  --text-color: black;
+}
+[data-theme="dark"] {
+  --bg-color: black;
+  --text-color: #fff;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+.bars {
+  display: flex;
+  justify-content: space-between;
+}
+.bars a {
+  font-size: 2rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+.bars a.active {
+  color: red;
+}
